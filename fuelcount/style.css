@@ -1,0 +1,108 @@
+/* Hintergrund und Layout des gesamten Containers */
+.background-dark {
+    background-color: #262626; /* Setzt die Hintergrundfarbe auf dunkelgrau */
+    display: flex; /* Aktiviert Flexbox für die Layout-Positionierung */
+    justify-content: center; /* Zentriert alle Elemente horizontal */
+    align-items: center; /* Zentriert alle Elemente vertikal */
+    height: 100vh; /* Setzt die Höhe auf 100% der Ansichtshöhe */
+    width: 100vw; /* Stellt sicher, dass die volle Breite genutzt wird */
+    margin: 0; /* Entfernt alle Standard-Abstände des Browsers */
+    flex-direction: column; /* Ordnet die Elemente untereinander an */
+    gap: 30px; /* Fügt einen Abstand von 30px zwischen den einzelnen Elementen hinzu */
+    padding-top: 50px; /* Etwas weniger Padding, um Platzprobleme zu vermeiden */
+    overflow: hidden; /* Verhindert das Scrollen */
+}
+
+/* Sicherstellen, dass die App die gesamte Bildschirmgröße nutzt */
+html, body {
+    height: 100vh; /* 100% der verfügbaren Höhe des Viewports */
+    width: 100vw; /* 100% der Breite nutzen */
+    margin: 0; /* Entfernt alle Ränder */
+    padding: 0; /* Entfernt Padding */
+    overflow: hidden; /* Kein Scrollen erlauben */
+    box-sizing: border-box; /* Beugt Problemen mit Größenanpassung vor */
+}
+
+/* Stil für die Buttons (Bilder) */
+.small-img {
+    width: 75px; /* Setzt die Breite der Bilder auf 75px */
+    height: auto; /* Setzt die Höhe automatisch basierend auf der Breite */
+}
+
+/* Stil für das Eingabefeld */
+input {
+    padding: 8px; /* Fügt 8px Innenabstand innerhalb des Eingabefelds hinzu */
+    font-size: 16px; /* Setzt die Schriftgröße auf 16px */
+    margin-right: 10px; /* Fügt 10px Abstand zum rechten Rand hinzu */
+    width: 100%; /* Setzt die Breite des Eingabefelds auf 100% des Containers */
+    text-align: center; /* Zentriert den Text innerhalb des Eingabefelds */
+}
+
+/* Stil für den Button */
+button {
+    padding: 10px; /* Fügt 10px Innenabstand zum Button hinzu */
+    font-size: 16px; /* Setzt die Schriftgröße des Buttons auf 16px */
+    cursor: pointer; /* Setzt den Mauszeiger auf eine Hand, wenn der Button angeklickt wird */
+}
+
+/* Container für das Eingabefeld und den Button */
+.input-container {
+    display: flex; /* Aktiviert Flexbox für die Layout-Positionierung */
+    flex-direction: column; /* Ordnet die Elemente untereinander an */
+    align-items: center; /* Zentriert alle Elemente horizontal */
+    gap: 10px; /* Fügt einen Abstand von 10px zwischen den Elementen hinzu */
+    max-width: 300px; /* Setzt die maximale Breite des Containers auf 300px */
+    margin: 0 auto; /* Zentriert den Container horizontal */
+}
+
+/* Stil für das Label des Eingabefelds */
+label {
+    font-size: 20px; /* Setzt die Schriftgröße des Labels auf 20px */
+    font-weight: bold; /* Setzt den Text des Labels fett */
+    text-align: center; /* Zentriert den Text innerhalb des Labels */
+    margin-bottom: 10px; /* Fügt 10px Abstand zwischen Label und Eingabefeld hinzu */
+    color: white; /* Setzt die Textfarbe auf weiß, um es besser lesbar zu machen */
+    font-family: 'Arial', sans-serif; /* Setzt die Schriftfarbe auf Arial, eine gut lesbare sans-serif Schriftart */
+}
+
+/* Container für die Buttons (Play, Stop, Reset) */
+.center {
+    display: flex; /* Aktiviert Flexbox für die Layout-Positionierung */
+    justify-content: center; /* Zentriert die Bilder horizontal */
+}
+
+/* Layout des gesamten Body-Bereichs */
+body {
+    background-color: #262626; /* Setzt die Hintergrundfarbe des Körpers auf dunkelgrau */
+    display: flex; /* Aktiviert Flexbox für die Layout-Positionierung */
+    justify-content: center; /* Zentriert den gesamten Body-Bereich horizontal */
+    align-items: center; /* Zentriert den gesamten Body-Bereich vertikal */
+    height: 100vh; /* Setzt die Höhe des Körpers auf 100% der Ansichtshöhe */
+    width: 100vw; /* Setzt die Breite auf 100% des Bildschirms */
+    margin: 0; /* Entfernt alle Standard-Abstände des Browsers */
+    overflow: hidden; /* Verhindert jegliches Scrollen */
+}
+
+/* Zähler-Anzeige */
+#display {
+    position: absolute; /* Position wird relativ zum Body gesetzt */
+    top: 50px; /* Abstand vom oberen Rand des Bildschirms */
+    left: 50%; /* Position horizontal in der Mitte */
+    transform: translateX(-50%); /* Exakte Mitte */
+    color: white; /* Schriftfarbe weiß */
+    font-size: 24px; /* Schriftgröße des Zählers */
+    font-weight: bold; /* Schriftgewicht */
+}
+
+/* Stil für die Literanzeige */
+#literDisplay {
+    color: white; /* Setzt die Textfarbe auf weiß */
+    font-size: 16px; /* Optional: Passt die Schriftgröße an */
+}
+
+/* Falls ein Element größer als der Bildschirm ist */
+* {
+    max-width: 100%;
+    max-height: 100%;
+    box-sizing: border-box;
+}

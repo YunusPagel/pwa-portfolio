@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FuelCount</title>
+    <link rel="stylesheet" href="style.css"> <!-- Verknüpfung der externen CSS-Datei -->
+    <link rel="manifest" href="/manifest.json"> <!-- Verknüpfung der externen JSON-Datei -->
+    <meta name="theme-color" content="#262626"> <!-- Passt die Statusleiste an -->
+
+    <!-- Favicon für den Browser-Tab -->
+    <link rel="icon" href="/img/icon/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/img/icon/favicon-96x96.png" sizes="96x96" type="image/png">
+    
+    <!-- Apple Touch Icon -->
+    <link rel="apple-touch-icon" href="/img/icon/apple-touch-icon-180x180.png">
+    
+    <!-- Weitere Favicons für verschiedene Größen -->
+    <link rel="icon" href="/img/icon/web-app-manifest-192x192.png" sizes="192x192" type="image/png">
+    <link rel="icon" href="/img/icon/web-app-manifest-512x512.png" sizes="512x512" type="image/png">
+    
+</head>
+<body class="background-dark">
+
+    <!-- Der Zähler wird hier direkt über dem Eingabefeld angezeigt-->
+    <div id="display">Liter: 0 L</div>
+
+    <!-- Container für das Eingabefeld und den Button -->
+    <div class="input-container">
+        <label for="liters">Liter pro Minute:</label> <!-- Beschriftung des Eingabefeldes -->
+        <input type="number" id="liters" placeholder="Eingabe Liter pro Minute"/> <!-- Eingabefeld für Liter pro Minute -->
+        <span id="literDisplay"></span> <!-- "l/s" wird hier angezeigt, aber nur nach der Berechnung -->
+        <button id="calculate">Berechnung</button> <!-- Berechnungs-Button -->
+    </div>
+
+    <!-- Play Button -->
+    <div>
+        <img src="img/play.png" class="small-img" id="playButton" alt="Play Button"> <!-- Bild für den Play-Button -->
+    </div>
+    
+    <!-- Stop Button -->
+    <div class="center">
+        <img src="img/stop.png" class="small-img" id="stopButton" alt="Stop Button"> <!-- Bild für den Stop-Button -->
+    </div>
+
+    <!-- Reset Button -->
+    <div class="center">
+        <img src="img/arrow.png" class="small-img" id="restartButton" alt="Reset Button"> <!-- Bild für den Reset-Button -->
+    </div>
+
+    <!-- Verknüpfung zur externen JavaScript-Datei-->
+     <script src="script.js"></script>
+
+</body>
+</html>
